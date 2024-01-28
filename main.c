@@ -6,7 +6,7 @@ int main()
     int start, end;
     scanf("%d %d", &start, &end);
 
-     printf("The Armstrong numbers are:");
+    printf("The Armstrong numbers are:");
     for(int i = start; i <= end; i++)
     {
         if(isArmstrong(i))
@@ -30,8 +30,6 @@ int main()
     }
     printf("\n");
 
-   
-
     printf("The Strong numbers are:");
     for(int i = start; i <= end; i++)
     {
@@ -41,7 +39,5 @@ int main()
     printf("\n");
 
     return 0;
-
-   
     
 }
