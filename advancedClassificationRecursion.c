@@ -4,11 +4,11 @@
 int reverseNum(int num, int result){
     if(num == 0)
         return result;
-    reversedNum(num/10, result*10 + num%10);
+    return reversedNum(num/10, result*10 + num%10);
 }
 
 int isPalindromeRecursive(int num) {
-    if(num == reverseNum(num))
+    if(num == reverseNum(num,0))
         return 1;
     return 0;
 
@@ -36,7 +36,7 @@ int powerOf(int base, int pow){
 int armStrongCal(int num, int digits, int result){
     if (num == 0)
         return result;
-    armStrongCal(num/10, result + powerOf(num%10,digits));
+    return armStrongCal(num/10, result + powerOf(num%10,digits));
 }
 
 //Function to check if a number is ArmStrong using recursive calculation 
