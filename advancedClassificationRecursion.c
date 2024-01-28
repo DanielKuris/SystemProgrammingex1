@@ -15,7 +15,7 @@ int isPalindromeRecursive(int num) {
 }
 
 // Function to get amount of digits of number used in isArmstrong function
-int getDigits(num){
+int getDigits(int num){
     int counter = 0;
     while (num > 0) {
         num/=10;
@@ -25,7 +25,7 @@ int getDigits(num){
 }
 
 // Function to calculate base ^ pow used in ArmStrong
-int powerOf(base, pow){
+int powerOf(int base, int pow){
     int result = 1;
     for(int i=1; i<=pow; i++)
         result *= base;

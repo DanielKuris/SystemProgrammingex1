@@ -19,15 +19,15 @@ int main() {
     printf("\n");
 
     for (int i = num1; i <= num2; ++i) 
-        if(isStrong(num1))
-            printf("%d is Strong \n" , num1);
-    
-    printf("\n");
-
-    for (int i = num1; i <= num2; ++i) 
         if(isArmstrong(num1))
             printf("%d is Armstrong \n" , num1);
 
+    printf("\n");
+
+    for (int i = num1; i <= num2; ++i) 
+        if(isStrong(num1))
+            printf("%d is Strong \n" , num1);
+    
     printf("\n");
 
     for (int i = num1; i <= num2; ++i) 
