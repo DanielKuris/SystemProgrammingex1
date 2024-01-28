@@ -36,7 +36,7 @@ int powerOf(int base, int pow){
 int armStrongCal(int num, int digits, int result){
     if (num == 0)
         return result;
-    return armStrongCal(num/10, result + powerOf(num%10,digits));
+    return armStrongCal(num/10, result + powerOf(num%10,digits), 0);
 }
 
 //Function to check if a number is ArmStrong using recursive calculation 
