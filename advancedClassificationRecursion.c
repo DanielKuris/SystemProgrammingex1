@@ -4,7 +4,7 @@
 int reverseNum(int num, int result){
     if(num == 0)
         return result;
-    return reversedNum(num/10, result*10 + num%10);
+    return reverseNum(num/10, result*10 + num%10);
 }
 
 int isPalindromeRecursive(int num) {
