@@ -1,36 +1,44 @@
-#include "stdio.h"
-#include "NumClass.h"
+#include <stdio.h>
+#include "numClass.h"
 
-int main() {
+int main()
+{
+    int start, end;
+    scanf("%d %d", &start, &end);
 
-    int num1 = 0, num2 = 0;
-
-    while(num1 <= 0)
-    scanf("%d", &num1);
-
-    while(num2 <= 0)
-    scanf("%d", &num2);
-
-    // Run on numbers between num1 and num2
-    for (int i = num1; i <= num2; ++i) 
-        if(isPrime(num1))
-            printf("%d is Prime" , num1);
-
+    printf("The Prime numbers are:");
+    for(int i = start; i <= end; i++)
+    {
+        if(isPrime(i))
+            printf(" %d", i);
+    }
     printf("\n");
 
-    for (int i = num1; i <= num2; ++i) 
-        if(isArmstrong(num1))
-            printf("%d is Armstrong \n" , num1);
-
+    printf("The Armstrong numbers are:");
+    for(int i = start; i <= end; i++)
+    {
+        if(isArmstrong(i))
+            printf(" %d", i);
+    }
     printf("\n");
 
-    for (int i = num1; i <= num2; ++i) 
-        if(isStrong(num1))
-            printf("%d is Strong \n" , num1);
+    printf("The Strong numbers are:");
+    for(int i = start; i <= end; i++)
+    {
+        if(isStrong(i))
+            printf(" %d", i);
+    }
+    printf("\n");
+
+    return 0;
+
+    printf("The Palindromes are:");
+    for(int i = start; i <= end; i++)
+    {
+        if(isPalindrome(i))
+            printf(" %d", i);
+    }
+    printf("\n");
+
     
-    printf("\n");
-
-    for (int i = num1; i <= num2; ++i) 
-        if(isPalindrome(num1))
-            printf("%d is Palindrome \n" , num1);
 }
