@@ -7,7 +7,7 @@ int reverseNum(int num, int result){
     return reverseNum(num/10, result*10 + num%10);
 }
 
-int isPalindromeRecursive(int num) {
+int isPalindrome(int num) {
     if(num == reverseNum(num,0))
         return 1;
     return 0;
